@@ -14,7 +14,7 @@ function App() {
     </header>
       <div className="flex flex-1">
         {/* Sidebar */}
-        <aside className="bg-gray-800 text-white w-64 p-4">
+        <aside className="bg-blue-900 text-white w-64 p-4">
           <Sidebar />
         </aside>
     <MainContent />

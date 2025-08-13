@@ -5,6 +5,7 @@ export default function Sidebar(){
             <li><Link to="/">Home</Link></li>
             <li><Link to="/graph">Vikt karta</Link></li>
             <li><Link to="/recipes">Recept</Link></li>
+            <li><Link to="/workout">Träning</Link></li>
             
         </ul>
     </div>
