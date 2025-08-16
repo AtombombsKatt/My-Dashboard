@@ -1,5 +1,6 @@
-export const recipes: {id: string, title: string, description: string, ingredients: string[]}[] = [
-    {id: "1", title: "Banan & Choklad Kaka", description: "Proteinfylld kaka med smak av banan och choklad", 
+
+export const recipes: {id: string, title: string, description: string, calories: string,img: string, category: string, ingredients: string[]}[] = [
+    {id: "1", title: "Banan & Choklad Kaka", description: "Proteinfylld kaka med smak av banan och choklad", calories: "1200", img: "/bananchokladkaka2.jpg", category: "Efterrätt",
         ingredients:[
             "2 bananer",
             "2skopor choklad proteinpulver (eventuellt kakao)",
@@ -11,7 +12,7 @@ export const recipes: {id: string, title: string, description: string, ingredien
             "mörk bakchoklad bitar"
         ]
      },
-    {id: "2", title: "Panerad Kyckling", description: "Panerade Kycklingbröst med grönsaker och riven parmesan" ,
+    {id: "2", title: "Panerad Kyckling", description: "Panerade Kycklingbröst med grönsaker och riven parmesan" , calories: "600",  img: "/bananchokladkaka.jpg", category: "Middag",
         ingredients:[
             "Ströbröd",
             "kyckling bröst",

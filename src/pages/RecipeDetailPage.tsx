@@ -10,15 +10,19 @@ export default function RecipeDetailPage(){
 
     return(
         <div className=" bg-slate-300 text-black font-serif flex flex-col border-e-violet-500 rounded-lg p-4">
+            <div className="max-w-96 h-auto ml-16">
+                <img src={recipe.img}/>
+            </div>
             <h1>{recipe.title}</h1>
             <h2 className="text-xl">{recipe.description}</h2>
             <ul className="text-lg flex flex-col space-y-2">
                 {recipe.ingredients.map((item, index)=> (
-                    <li key={index}>{item}</li>
+                    <li key={index}>{item} </li>
                 ))}
             </ul>
+            <h2 className="text-xl font-bold mt-4">Kalorier: ca {recipe.calories}</h2>
             <div className="mt-6 ">
-                <Link className="font-bold text-xl text-black hover:text-yellow-600 "to="/recipes">Tillbaka till recept</Link>
+                <Link className="font-bold text-xl text-black hover:text-yellow-600 transition-all duration-500 hover:text-2xl"to="/recipes">Tillbaka till recept</Link>
             </div>
         </div>
     )
