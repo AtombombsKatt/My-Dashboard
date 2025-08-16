@@ -9,12 +9,12 @@ function App() {
 
   return (
    <div className='min-h-screen flex flex-col'>
-    <header className='bg-blue-200'>
+    <header>
       <Navbar />
     </header>
       <div className="flex flex-1">
         {/* Sidebar */}
-        <aside className="bg-blue-900 text-white w-64 p-4">
+        <aside className=" bg-[#4F8EF7] w-64 p-4">
           <Sidebar />
         </aside>
     <MainContent />

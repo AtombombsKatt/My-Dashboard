@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 export default function Sidebar(){
-    return(<div>
-        <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/graph">Vikt karta</Link></li>
-            <li><Link to="/recipes">Recept</Link></li>
-            <li><Link to="/workout">Träning</Link></li>
+    return(<div className="">
+        <ul className="">
+            <li className="m-2" ><Link className="text-gray-200 text-lg" to="/">Home</Link></li>
+            <li className="m-2"><Link className="text-gray-200 text-lg" to="/graph">Vikt karta</Link></li>
+            <li className="m-2"><Link className="text-gray-200 text-lg"  to="/recipes">Recept</Link></li>
+            <li className="m-2"><Link className="text-gray-200 text-lg" to="/workout">Träning</Link></li>
             
         </ul>
     </div>
