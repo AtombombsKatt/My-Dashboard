@@ -9,7 +9,7 @@ export default function RecipeDetailPage(){
     }
 
     return(
-        <div className=" bg-slate-300 text-black font-serif flex flex-col border-e-violet-500 rounded-lg p-4">
+        <div className=" bg-slate-200 text-black font-serif flex flex-col border-blue-500 border-2 rounded-lg p-4">
             <div className="max-w-96 h-auto ml-16">
                 <img src={recipe.img}/>
             </div>
