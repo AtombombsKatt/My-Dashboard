@@ -1,5 +1,6 @@
 // src/components/Navbar.jsx
 import React from 'react';
+import ThemeButton from '../Components/ThemeButton';
 import { Link } from 'react-router-dom';
 export default function Navbar() {
   return (
@@ -12,6 +13,7 @@ export default function Navbar() {
           <a href="#" className="text-black px-3 hover:underline">Home</a>
           <a href="#" className="text-black px-3 hover:underline">About</a>
           <a href="#" className="text-black px-3 hover:underline">Contact</a>
+          <ThemeButton />
         </div>
       </div>
     </nav>

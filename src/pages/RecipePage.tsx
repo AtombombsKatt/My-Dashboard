@@ -3,8 +3,8 @@ import { recipes } from "../data/RecipesData"
 export default function RecipePage(){
     return(
         <div className="min-w-96">
-            <h1>Recept</h1>
             <div className="bg-slate-200 border-blue-500 border-2 p-4 rounded">
+            <h1 className="text-black mb-4">Recept</h1>
                 <ul className="  flex flex-col justify- space-y-5">
                    {recipes.map((recipe) =>(
                     <li  className="bg-[#242424] rounded-lg shadow-lg p-2"key={recipe.id}>

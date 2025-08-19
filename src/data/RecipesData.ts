@@ -1,6 +1,6 @@
 
 export const recipes: {id: string, title: string, description: string, calories: string,img: string, category: string, ingredients: string[]}[] = [
-    {id: "1", title: "Banan & Choklad Kaka", description: "Proteinfylld kaka med smak av banan och choklad", calories: "1200", img: "/bananchokladkaka2.jpg", category: "Efterrätt",
+    {id: "1", title: "Banan & Choklad Kaka", description: "Proteinfylld kaka med smak av banan och choklad", calories: "hel: ca 1200 1 slice: ca 100", img: "/bananchokladkaka2.jpg", category: "Efterrätt",
         ingredients:[
             "2 bananer",
             "2skopor choklad proteinpulver (eventuellt kakao)",
