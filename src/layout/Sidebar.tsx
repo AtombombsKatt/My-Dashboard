@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom"
+
+import ThemeSelector from "../Components/ThemeSelector"
+
 export default function Sidebar(){
     return(<div className="">
         <ul className="">
@@ -8,6 +11,7 @@ export default function Sidebar(){
             <li className="m-2"><Link className="text-gray-200 text-lg" to="/workout">Träning</Link></li>
             
         </ul>
+        <ThemeSelector />
     </div>
     )
 }
