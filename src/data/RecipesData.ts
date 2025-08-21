@@ -12,7 +12,7 @@ export const recipes: {id: string, title: string, description: string, calories:
             "mörk bakchoklad bitar"
         ]
      },
-    {id: "2", title: "Panerad Kyckling", description: "Panerade Kycklingbröst med grönsaker och riven parmesan" , calories: "600",  img: "/bananchokladkaka.jpg", category: "Middag",
+    {id: "2", title: "Panerad Kyckling", description: "Panerade Kycklingbröst med grönsaker och riven parmesan" , calories: "600",  img: "/paneradkyckling.jpg", category: "Middag",
         ingredients:[
             "Ströbröd",
             "kyckling bröst",

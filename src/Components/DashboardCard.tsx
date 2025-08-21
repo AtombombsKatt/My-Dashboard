@@ -1,12 +1,14 @@
+import { useThemeColors } from "../Hooks/useThemeColors";
 type CardProps = {
   title: string;
   children: React.ReactNode;
 };
 
 export default function DashboardCard({ title, children }: CardProps) {
+  const colors = useThemeColors();
   return (
-    <div className="bg-slate-200 text-black p-4 rounded border-blue-400 border-2 shadow-2xl max-h-72 space-y-4 transition-transform duration-300 hover:scale-105 hover:shadow-lg mt-4">
-      <h2 className="text-lg text-black font-bold mb-2">{title}</h2>
+    <div className={`${colors.container} ${colors.text} p-4 rounded border-blue-400 border-2 shadow-2xl max-h-72 space-y-4 transition-transform duration-300 hover:scale-105 hover:shadow-lg mt-4`}>
+      <h2 className="text-lg  font-bold mb-2">{title}</h2>
       {children}
     </div>
   );

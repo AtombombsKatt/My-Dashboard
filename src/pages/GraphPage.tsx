@@ -1,5 +1,6 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { weightData } from '../data/weightData';
+import { useThemeColors } from '../Hooks/useThemeColors';
 let totalweight: number = 0;
 let totalDates: number = 0;
 let avgWeight: number;
@@ -23,9 +24,10 @@ for (let i = 0; i < weightData.length; i++) {
 weightLoss = startingWeight - currentWeight;
     
 export default function GraphPage(){
+  const colors = useThemeColors();
     return(
-        <div className="bg-slate-200 mt-8 p-4 border-blue-500 border-2 rounded-lg shadow w-1/2 h-3/4">
-            <h2 className='text-lg text-black font-semibold'>Vikt över tid</h2>
+        <div className={`${colors.container} ${colors.text} mt-8 p-4 border-blue-500 border-2 rounded-lg shadow w-1/2 h-3/4`}>
+            <h2 className='text-lg font-semibold'>Vikt över tid</h2>
             <ResponsiveContainer width="100%" height={300}>
                 <LineChart data={weightData}>
                 <CartesianGrid strokeDasharray="3 3"/>
@@ -37,7 +39,7 @@ export default function GraphPage(){
             </LineChart>
             </ResponsiveContainer>
 
-            <div className="text-black font-semibold text-lg space-y-1">
+            <div className=" font-semibold text-lg space-y-1">
   <div className="flex justify-between">
     <span>Genomsnittlig vikt:</span>
     <span>{avgWeight.toFixed(2)} kg</span>
