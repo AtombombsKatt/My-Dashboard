@@ -15,9 +15,9 @@ function App() {
     </header>
     <div className="flex flex-1">
         {/* Sidebar */}
-        <aside className=" bg-[#4F8EF7] w-64 p-4">
+      
           <Sidebar />
-        </aside>
+      
       <MainContent  />
    </div>
    </div>
